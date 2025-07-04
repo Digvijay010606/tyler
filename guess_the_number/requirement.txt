@@ -1,0 +1,6 @@
+required pip packages that you need to install
+
+
+1. pyfiglet
+
+pip install pyfiglet
