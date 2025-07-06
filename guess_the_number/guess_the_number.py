@@ -12,7 +12,7 @@ def game():
     os.system("clear")
 
     
-    print(pyfiglet.figlet_format(Fore.GREEN + "GUESS THE NUMBER GAME" + Style.RESET_ALL))
+    print(pyfiglet.figlet_format("GUESS THE NUMBER GAME"))
 
     print("\n\n\n\n\n")
 
