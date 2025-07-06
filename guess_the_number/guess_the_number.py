@@ -1,23 +1,38 @@
 import pyfiglet
 import random
 import os
+from rich.progress import track
+import time
+from colorama import Fore, Back, Style, init
+
+
+init()
 
 def game():
     os.system("clear")
 
-    # this is welcome part and not to be changed
+    
+    print(pyfiglet.figlet_format(Fore.GREEN + "GUESS THE NUMBER GAME" + Style.RESET_ALL))
 
-    print("="*80)
+    print("\n\n\n\n\n")
+
+    for step in track(range(100), description="Loading Game..."):
+        time.sleep(0.01)
+
+    os.system("clear")
 
     print(pyfiglet.figlet_format("GUESS THE NUMBER GAME"))
 
-    print("="*80)
+    print("\n\n\n\n\n")
+    input(Fore.YELLOW + "Press <ENTER> to continue".center(80) + Style.RESET_ALL)
 
 
     # game logic starts from here
 
-    start = int(input("Enter starting number: "))
-    end = int(input("Enter ending number: "))
+    os.system("clear")
+
+    start = int(input("Enter the first number of the guessing range: "))
+    end = int(input("Enter the last number of the guessing range: "))
      
     
     
